@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Log files
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# Build directories
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# npm package lock file
+package-lock.json
+
+# Yarn lock file
+yarn.lock
+
+# Coverage reports
+coverage/
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Miscellaneous
+*.tgz
+*.swp
+*.swo
