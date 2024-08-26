@@ -55,7 +55,7 @@ const main = async () => {
   app.put("/posts/:id", authCheck, updatePost);
   app.delete("/posts/:id", authCheck, deletePost);
 
-  app.listen(4200, () => {
+  app.listen(process.env.PORT || 4200, () => {
     console.log("RUN 4200");
   });
 };
