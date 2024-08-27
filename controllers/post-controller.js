@@ -93,7 +93,7 @@ export const getOne = async (req, res) => {
   const post = await db.query("SELECT * FROM `posts` WHERE `id` = ?", [id]);
 
   return res.status(200).json({
-    post: post[0][0],
+    post: post[0],
     success: true,
   });
 };
