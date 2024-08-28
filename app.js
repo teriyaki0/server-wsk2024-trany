@@ -36,7 +36,7 @@ const main = async () => {
   app.use(express.json());
   app.use(cors());
 
-  app.use("/uploads", express.static("uploads"));
+  app.use("/upload", express.static("uploads"));
 
   app.post("/upload", authCheck, uploads.single("image"), (req, res) => {
     return res.json({
